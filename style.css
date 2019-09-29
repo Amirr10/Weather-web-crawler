@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(rgb(47,150,163), rgb(48,62,143));
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size:  20px;
+}
+
+.location,
+.temperature{
+    height: 30vh;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 300px;
+    margin-bottom: 20px;
+}
+
+.location-tz {
+    margin-left: 90px;
+}
+
+.temperature{
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.degree{
+    display: block;
+
+}
+
+.degree-section{
+    display: block;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.degree-section span{
+    margin: 10px;
+    font-size: 40px;
+    margin-bottom: 100px;
+
+}
+
+.degree-section h3{
+    font-size: 40px;
+}
+
+header {
+    padding-top: 30px;
+    min-height: 70px;
+}
+
+header ul{
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    display: inline;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+header a{
+    font-size: 22px;
+    color: #ffffff;
+    text-decoration: none;
+    margin: auto;
+    padding: 0;
+}
+
+ #brand {
+    float: left;
+    margin-left: 30px;
+    margin-top: -50px;
+  
+}
+
+#brand canvas{
+    float: left;
+}
+
+header nav{
+    float: right;
+    margin-top: -50px;
+}
+
+.login-header{
+    display: flex;
+    margin-top: -120px;
+}
+
+#li-user{
+margin-bottom: 5px;
+}
+
+.humidity{
+   display: block;
+}
+
+.main{
+    margin-bottom: 50px;
+}

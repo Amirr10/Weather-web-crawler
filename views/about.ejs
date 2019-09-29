@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<title>About</title>
+<body>
+    <a href="/index" style="margin-bottom:100px;text-decoration: none; font-size:30px;color: #ffffff;float:left;">
+        <span class="indexHome"><canvas id="icon" style="font-weight: bold; float: left; width:150px; height:50px;"></canvas>
+        </span></a>
+
+
+        
+        <div class="toup" style="margin-bottom: 100px;">
+        <h1>About Page</h1>
+        <h2><%= word1[0].city %></h2>
+        <h2><%= word1[0].temperature %></h2>
+        <h2><%= word1[0].humidity %></h2>
+        <h2><%= word1[0].description %></h2>
+  
+    </div>
+
+    <script src="/skycons.js"></script>
+    <script>
+        var icons = new Skycons({ "color": "white" });
+        icons.add("icon", Skycons.CLOUDY);
+        icons.play();   
+    </script>
+</body>
+</html>

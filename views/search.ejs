@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Search</title>
+</head>
+
+<body style="text-align: center; background: linear-gradient(rgb(48,62,143), rgb(48,62,143)); ">
+    <div class="header">
+        <div class="titl"
+            style="margin-top:90px;margin-right:130px;font-family:Source Sans Pro,Shadows into Light,sans-serif; font-size: 60px; color: #ffffff">
+            <a href="/index"
+                style="margin-bottom:100px; text-decoration: none; font-size:30px;color: #ffffff;float:left;"><canvas id="icon" style="font-weight: bold; width:150px; height:50px;"></canvas>
+            </a>
+                    Weather Web Crawler</div>
+                    
+    </div>
+
+    <div class="search" style="margin-top:90px; font-size: 40px; font-family: sans-serif; color: #ffffff;">Search Here
+    </div>
+
+    <!-- Search Form to search by country and city -->
+    <form name="formEjs" method="GET" action="/index">
+
+        <input type="text" name="sname" class="addCountry" placeholder="Enter Country">
+        <input type="text" name="cname" class="addCity" placeholder="Enter City">
+
+        <input type="submit" class="btn" value="Click"></button>
+    </form>
+
+    <script src="/skycons.js"></script>
+    <script>
+            var icons = new Skycons({ "color": "white" });
+            icons.add("icon", Skycons.CLOUDY);
+            icons.play();   
+        </script>
+</body>
+</html>

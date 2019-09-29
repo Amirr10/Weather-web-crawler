@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta http-equiv="refresh" content="5">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+                <div id="brand" style="display: inline;"><a href="/">
+            <canvas id="icon" style="font-weight: bold; width:150px; height:50px;"></canvas>
+            <h2>Weather App</h2>
+        </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="/index">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="main">
+<div class="location">
+    <h2 class="location-tz">Time Zone</h2>
+    <h2 class="location-tz"><%= word1[0].city %></h2>
+    <canvas class="icon" width="128" height="128"></canvas>
+</div>
+
+<div class="temperature">
+    <div class="degree-section">
+       <h2 class="degree"><%= word1[0].temperature %></h2>
+        <h2 class="humidity">Humidity <%= word1[0].humidity %></h2>
+    </div>
+    
+    <div class="descreption">
+        <h1 class="description">Description:</h1>
+        <%= word1[0].description %></div>
+    </div>
+</section>
+
+<script src="main.js"></script>
+<script src="/skycons.js"></script>
+    <script>
+        var icons = new Skycons({ "color": "white" });
+        icons.add("icon", Skycons.CLOUDY);
+        icons.play();   
+    </script>
+</body>
+</html>
+
+
+ 
